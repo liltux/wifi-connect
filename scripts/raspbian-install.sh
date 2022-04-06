@@ -159,7 +159,7 @@ confirm_installation() {
 }
 
 install_wfc() {
-    local _regex='browser_download_url": "\K.*rpi\.tar\.gz'
+    local _regex='browser_download_url": "\K.*rpi\.tar\.gz' #local _regex='browser_download_url": "\K.*aarch64\.tar\.gz' for 64bit rpi
     local _arch_url
     local _wfc_version
     local _download_dir
